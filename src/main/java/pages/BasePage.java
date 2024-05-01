@@ -36,6 +36,10 @@ public abstract class BasePage {
         element.sendKeys();
     }
 
+    public String getTextBase(WebElement element) {
+        return element.getText().trim();
+    }
+
     public void pause(int time) {
         try {
             Thread.sleep(time);
