@@ -16,4 +16,9 @@ public class HomePage extends BasePage {
         clickWithJsScroll(btnAlertsFrames, 0, 300);
         return new AlertsWindowsPage(driver);
     }
+
+    public HomePage navigateToHomePage() {
+        driver.navigate().to("https://demoqa.com/");
+        return this;
+    }
 }
